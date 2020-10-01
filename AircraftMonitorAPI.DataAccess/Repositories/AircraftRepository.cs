@@ -17,7 +17,7 @@ namespace AircraftMonitorAPI.DataAccess.Repositories
 
         public AircraftRepository()
         {
-            _connectionString = "Data Source=XXX\\SQLEXPRESS;Initial Catalog=AircraftDB;Integrated Security=True";
+            _connectionString = @"Data Source=XXX\SQLEXPRESS;Initial Catalog=AircraftDB;Integrated Security=True";
         }
 
         public IDbConnection Connection
@@ -32,30 +32,9 @@ namespace AircraftMonitorAPI.DataAccess.Repositories
         {
             using(IDbConnection dbConnection = Connection)
             {
-                string query = @"INSERT INTO Aircraft 
-                    (Id,
-                    Manufacturer,
-                    Model,
-                    RegistrationNumber,
-                    FirstClassCapacity,
-                    RegularClassCapacity,
-                    CrewCapacity,
-                    ManufactureDate,
-                    NumberOfEngines,
-                    EmptyWeight,
-                    MaxTakeOffWeight) VALUES(Id,
-                    Manufacturer,
-                    Model,
-                    RegistrationNumber,
-                    FirstClassCapacity,
-                    RegularClassCapacity,
-                    CrewCapacity,
-                    ManufactureDate,
-                    NumberOfEngines,
-                    EmptyWeight,
-                    MaxTakeOffWeight)";
-
                 dbConnection.Open();
+                string query = @"INSERT INTO Aircraft(Manufacturer, Model, RegistrationNumber, FirstClassCapacity, RegularClassCapacity, CrewCapacity, ManufactureDate, NumberOfEngines, EmptyWeight, MaxTakeOffWeight) VALUES(Manufacturer, Model, RegistrationNumber, FirstClassCapacity, RegularClassCapacity, CrewCapacity, ManufactureDate, NumberOfEngines, EmptyWeight, MaxTakeOffWeight)";
+
                 dbConnection.Execute(query, aircraft);
             }
         }
@@ -64,8 +43,8 @@ namespace AircraftMonitorAPI.DataAccess.Repositories
         {
             using(IDbConnection dbConnection = Connection)
             {
-                string query = @"DELETE FROM Aircraft WHERE Id=@Id";
                 dbConnection.Open();
+                string query = @"DELETE FROM Aircraft WHERE Id=@Id";
                 dbConnection.Execute(query, new { Id = id });
             }
         }
@@ -74,20 +53,8 @@ namespace AircraftMonitorAPI.DataAccess.Repositories
         {
             using(IDbConnection dbConnection = Connection)
             {
-                string query = @"UPDATE Aircraft SET 
-                    Id=@Id,
-                    Manufacturer=@Manufacturer,
-                    Model=@Model,
-                    RegistrationNumber=@RegistrationNumber,
-                    FirstClassCapacity=@FirstClassCapacity,
-                    RegularClassCapacity=@RegularClassCapacity,
-                    CrewCapacity=@CrewCapacity,
-                    ManufactureDate=@ManufactureDate,
-                    NumberOfEngines=@NumberOfEngines,
-                    EmptyWeight=@EmptyWeight,
-                    MaxTakeOffWeight=@MaxTakeOffWeight";
-
                 dbConnection.Open();
+                string query = @"UPDATE Aircraft SET Id=@Id, Manufacturer=@Manufacturer, Model=@Model, RegistrationNumber=@RegistrationNumber, FirstClassCapacity=@FirstClassCapacity, RegularClassCapacity=@RegularClassCapacity, CrewCapacity=@CrewCapacity, ManufactureDate=@ManufactureDate, NumberOfEngines=@NumberOfEngines, EmptyWeight=@EmptyWeight, MaxTakeOffWeight=@MaxTakeOffWeight";
                 dbConnection.Query(query, aircraft);
             }
         }
@@ -96,8 +63,8 @@ namespace AircraftMonitorAPI.DataAccess.Repositories
         {
             using (IDbConnection dbConnection = Connection)
             {
-                string query = @"SELECT * FROM Aircraft";
                 dbConnection.Open();
+                string query = @"SELECT * FROM Aircraft";
                 return dbConnection.Query<Aircraft>(query);
             }
         }
@@ -106,8 +73,8 @@ namespace AircraftMonitorAPI.DataAccess.Repositories
         {
             using(IDbConnection dbConnection = Connection)
             {
-                string query = @"SELECT * FROM Aircraft WHERE Id = @Id";
                 dbConnection.Open();
+                string query = @"SELECT * FROM Aircraft WHERE Id = @Id";
                 return dbConnection.Query<Aircraft>(query, new { Id = id }).FirstOrDefault();
             }
         }
@@ -116,8 +83,8 @@ namespace AircraftMonitorAPI.DataAccess.Repositories
         {
             using(IDbConnection dbConnection = Connection)
             {
-                string query = @"SELECT * Aircraft WHERE Model=@Model";
                 dbConnection.Open();
+                string query = @"SELECT * Aircraft WHERE Model=@Model";
                 return dbConnection.Query<Aircraft>(query, new { Model = model }).FirstOrDefault();
             }
         }
