@@ -1,8 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using AircraftMonitorAPI.Entities;
+using System;
 using System.Collections.Generic;
 using System.Text;
-using AircraftMonitorAPI.Entities;
+using System.Threading.Tasks;
 
 namespace AircraftMonitorAPI.Services
 {
@@ -13,8 +13,6 @@ namespace AircraftMonitorAPI.Services
         Task<CardixPatient> GetCardixPatientBypatientId(string PatientId);
         void AddCardixPatient(CardixPatient patient);
         void UpdateCardixPatient(CardixPatient patient);
-        void DeleteCardixPatient(string Id);
-
-
+        void DeleteCardixPatient(int Id);
     }
 }

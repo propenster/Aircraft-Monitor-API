@@ -20,7 +20,6 @@
     <ProjectReference Include="..\AircraftMonitorAPI.Controllers\AircraftMonitorAPI.Controllers.csproj" />
     <ProjectReference Include="..\AircraftMonitorAPI.DataAccess\AircraftMonitorAPI.DataAccess.csproj" />
     <ProjectReference Include="..\AircraftMonitorAPI.Entities\AircraftMonitorAPI.Entities.csproj" />
-    <ProjectReference Include="..\AircraftMonitorAPI.Services\AircraftMonitorAPI.Services.csproj" />
   </ItemGroup>
 
 </Project>

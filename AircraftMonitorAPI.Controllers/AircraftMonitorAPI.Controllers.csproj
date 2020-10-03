@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AircraftMonitorAPI.DataAccess\AircraftMonitorAPI.DataAccess.csproj" />
     <ProjectReference Include="..\AircraftMonitorAPI.Entities\AircraftMonitorAPI.Entities.csproj" />
+    <ProjectReference Include="..\AircraftMonitorAPI.SErvicess\AircraftMonitorAPI.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

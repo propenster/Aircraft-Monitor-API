@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AircraftMonitorAPI.Entities
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AircraftMonitorAPI.Controllers", "AircraftMonitorAPI.Controllers\AircraftMonitorAPI.Controllers.csproj", "{CDC3562F-8B44-4CB1-B8E2-8215327BE30D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AircraftMonitorAPI.Services", "AircraftMonitorAPI.Services\AircraftMonitorAPI.Services.csproj", "{3F043D54-8D73-49D8-BB32-ED9F0698D4F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AircraftMonitorAPI.Services", "AircraftMonitorAPI.SErvicess\AircraftMonitorAPI.Services.csproj", "{DCA5821D-74CF-4D95-B88E-EA14731951F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{CDC3562F-8B44-4CB1-B8E2-8215327BE30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDC3562F-8B44-4CB1-B8E2-8215327BE30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDC3562F-8B44-4CB1-B8E2-8215327BE30D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3F043D54-8D73-49D8-BB32-ED9F0698D4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F043D54-8D73-49D8-BB32-ED9F0698D4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F043D54-8D73-49D8-BB32-ED9F0698D4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F043D54-8D73-49D8-BB32-ED9F0698D4F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCA5821D-74CF-4D95-B88E-EA14731951F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCA5821D-74CF-4D95-B88E-EA14731951F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCA5821D-74CF-4D95-B88E-EA14731951F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCA5821D-74CF-4D95-B88E-EA14731951F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
