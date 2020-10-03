@@ -33,7 +33,7 @@ namespace AircraftMonitorAPI.DataAccess.Repositories
             using(IDbConnection dbConnection = Connection)
             {
                 dbConnection.Open();
-                string query = @"INSERT INTO Aircraft(Manufacturer, Model, RegistrationNumber, FirstClassCapacity, RegularClassCapacity, CrewCapacity, ManufactureDate, NumberOfEngines, EmptyWeight, MaxTakeOffWeight) VALUES(Manufacturer, Model, RegistrationNumber, FirstClassCapacity, RegularClassCapacity, CrewCapacity, ManufactureDate, NumberOfEngines, EmptyWeight, MaxTakeOffWeight)";
+                string query = @"INSERT INTO Aircraft(Manufacturer, Model, RegistrationNumber, FirstClassCapacity, RegularClassCapacity, CrewCapacity, ManufactureDate, NumberOfEngines, EmptyWeight, MaxTakeOffWeight) VALUES(@Manufacturer, @Model, @RegistrationNumber, @FirstClassCapacity, @RegularClassCapacity, @CrewCapacity, @ManufactureDate, @NumberOfEngines, @EmptyWeight, @MaxTakeOffWeight)";
 
                 dbConnection.Execute(query, aircraft);
             }
