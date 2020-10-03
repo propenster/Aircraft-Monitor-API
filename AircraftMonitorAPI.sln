@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1231
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AircraftMonitorAPI", "AircraftMonitorAPI\AircraftMonitorAPI.csproj", "{741E3042-83F2-4AD7-9C40-B9F7D3374ABE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AircraftMonitorAPI", "AircraftMonitorAPI\AircraftMonitorAPI.csproj", "{741E3042-83F2-4AD7-9C40-B9F7D3374ABE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AircraftMonitorAPI.DataAccess", "AircraftMonitorAPI.DataAccess\AircraftMonitorAPI.DataAccess.csproj", "{35B7EE9D-D93A-4D0D-B5E1-F64254EFAC50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AircraftMonitorAPI.DataAccess", "AircraftMonitorAPI.DataAccess\AircraftMonitorAPI.DataAccess.csproj", "{35B7EE9D-D93A-4D0D-B5E1-F64254EFAC50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AircraftMonitorAPI.Entities", "AircraftMonitorAPI.Entities\AircraftMonitorAPI.Entities.csproj", "{994C2062-E351-4AE6-A601-F6CAFB88D958}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AircraftMonitorAPI.Entities", "AircraftMonitorAPI.Entities\AircraftMonitorAPI.Entities.csproj", "{994C2062-E351-4AE6-A601-F6CAFB88D958}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AircraftMonitorAPI.Controllers", "AircraftMonitorAPI.Controllers\AircraftMonitorAPI.Controllers.csproj", "{CDC3562F-8B44-4CB1-B8E2-8215327BE30D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AircraftMonitorAPI.Controllers", "AircraftMonitorAPI.Controllers\AircraftMonitorAPI.Controllers.csproj", "{CDC3562F-8B44-4CB1-B8E2-8215327BE30D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AircraftMonitorAPI.Services", "AircraftMonitorAPI.Services\AircraftMonitorAPI.Services.csproj", "{3F043D54-8D73-49D8-BB32-ED9F0698D4F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{CDC3562F-8B44-4CB1-B8E2-8215327BE30D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDC3562F-8B44-4CB1-B8E2-8215327BE30D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDC3562F-8B44-4CB1-B8E2-8215327BE30D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F043D54-8D73-49D8-BB32-ED9F0698D4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F043D54-8D73-49D8-BB32-ED9F0698D4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F043D54-8D73-49D8-BB32-ED9F0698D4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F043D54-8D73-49D8-BB32-ED9F0698D4F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
